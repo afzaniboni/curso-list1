@@ -82,10 +82,10 @@ public class CadastraExcluiEmpregado {
 
 			}
 
-			///////////////////////////////////////////////////////////////
-			// Não entendi o motivo deste erro e como seria a sintaxe pra excluir da lista o id desejado
 			listaEmpregado.remove(buscaEmpregado(listaEmpregado, idExcluiEmpregado));
-			///////////////////////////////////////////////////////////////
+			// Outra forma de fazer
+			//Empregado empregado = buscaEmpregado(listaEmpregado, idExcluiEmpregado);
+			//listaEmpregado.removeIf(x -> x.getId() == empregado.getId());
 		}
 
 		System.out.println("");
